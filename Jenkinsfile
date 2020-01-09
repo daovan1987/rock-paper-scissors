@@ -4,7 +4,7 @@ node {
 		prefix = '~/setup/git/';
 	else 
 		prefix = 'c:\\setup\\git\\';
-	def mvnHome = tool 'Maven 3.3.9'
+	def mvnHome = tool 'Maven3.6.3'
 	def tomcatWeb = ''
 	def mvnBin = mvnHome
 	if (isUnix()) {
@@ -12,7 +12,7 @@ node {
 		mvnBin+='/bin'
 		}
 	else { 
-		tomcatWeb = 'C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps'	
+		tomcatWeb = 'C:\\Users\\Hipt\\Desktop\\apache-tomcat-8.5.50\\webapps'	
 		mvnBin+='\\bin'
 		}
 	stage('jpa') { 
